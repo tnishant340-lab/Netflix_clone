@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================= BODY ================= */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #111;
+    background: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 85px;
+    background: #0b2850;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 4%;
+}
+
+.logo h1 {
+    font-size: 30px;
+}
+
+.logo p {
+    font-size: 19px;
+    margin-top: 4px;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+nav a:first-child {
+    color: #ffd400;
+    border-bottom: 4px solid #ffd400;
+    padding-bottom: 15px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 325px;
+
+    background: #eef6ff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 150px;
+
+    border-bottom: 1px solid #ccc;
+
+    padding: 30px 5%;
+}
+
+.hero-text {
+    width: 500px;
+}
+
+.hero-text h2 {
+    color: #102c55;
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.hero-text h3 {
+    color: #1760b8;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.hero-text p {
+    font-size: 17px;
+    line-height: 1.55;
+    margin-bottom: 18px;
+}
+
+button {
+    background: #0b2850;
+    color: white;
+
+    border: none;
+
+    padding: 11px 28px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.hero-image img {
+    width: 225px;
+    height: 225px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 7px solid white;
+
+    box-shadow: 0 2px 8px #888;
+}
+
+
+/* ================= MAIN ================= */
+
+main {
+    padding: 25px 12%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1.7fr;
+
+    column-gap: 35px;
+    row-gap: 25px;
+}
+
+
+/* ================= COMMON HEADINGS ================= */
+
+main h2 {
+    color: #102c55;
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.box p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.box ul {
+    padding-left: 20px;
+}
+
+.box li {
+    margin-bottom: 7px;
+    font-size: 15px;
+}
+
+
+/* ================= EDUCATION ================= */
+
+.education {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+
+    padding: 9px;
+
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+
+/* ================= PROJECTS ================= */
+
+.projects {
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+.project-container {
+    display: flex;
+
+    gap: 15px;
+}
+
+.project {
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    flex: 1;
+
+    padding: 12px;
+}
+
+.project h3 {
+    color: #102c55;
+
+    font-size: 16px;
+
+    margin-bottom: 8px;
+}
+
+.project p {
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: #0066cc;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.contact label {
+    display: block;
+
+    font-weight: bold;
+
+    font-size: 13px;
+
+    margin: 6px 0 3px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+
+    border: 1px solid #ccc;
+
+    border-radius: 3px;
+
+    padding: 8px;
+
+    font-size: 13px;
+}
+
+.contact textarea {
+    height: 65px;
+
+    resize: none;
+}
+
+.contact button {
+    margin-top: 8px;
+
+    padding: 9px 18px;
+}
+
+.contact .reset {
+    background: #ddd;
+
+    color: #111;
+}
+
+
+/* ================= SOCIAL ================= */
+
+.social {
+    grid-column: 1 / 4;
+
+    margin-top: 5px;
+
+    padding-top: 5px;
+}
+
+.social h2 {
+    display: inline-block;
+
+    margin-right: 20px;
+}
+
+.social a {
+    text-decoration: none;
+
+    margin-right: 20px;
+
+    color: #1264b7;
+
+    font-weight: bold;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    min-height: 55px;
+
+    background: #0b2850;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    padding: 15px;
+}
