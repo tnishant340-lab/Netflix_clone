@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 80px;
+  background-color: white;
+  color: black;
+}
+
+button {
+  padding: 8px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: #222;
+  color: white;
+}
+
+body.blue {
+  background-color: #cce5ff;
+  color: #003366;
+}
+
+body.green {
+  background-color: #d4f5d4;
+  color: #145214;
+}
