@@ -1,122 +1,98 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f3eaff;
+        }
+
+        .form {
+            width: 400px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #563477;
+        }
+
+        input, select {
+            margin: 8px 0 15px;
+        }
+
+        .text {
+            width: 100%;
+            padding: 9px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #563477;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
-<body bgcolor="#FFF5F54">
+<body>
 
-    <table border="0" cellpadding="0" cellspacing="0" width="550" bgcolor="#FFFFFF8" align="center">
-        <tr>
-            <td>
-                
-                <table border="0" cellpadding="20" cellspacing="0" width="100%" bgcolor="#8B0440">
-                    <tr>
-                        <td align="center">
-                            <font color="#FFFFFF" size="5"><b>📝 STUDENT REGISTRATION FORM</b></font>
-                        </td>
-                    </tr>
-                </table>
+<div class="form">
 
-                <form>
-                    <table border="0" cellpadding="10" cellspacing="0" width="100%">
-                        
-                        <tr>
-                            <td width="35%" align="right">
-                                <b><font color="#8B0000">Full Name:</font></b>
-                            </td>
-                            <td width="65%">
-                                <input type="text" name="fullname" placeholder="Enter your full name" required>
-                            </td>
-                        </tr>
+    <h2>Registration Form</h2>
 
-                        <tr>
-                            <td align="right">
-                                <b><font color="#8B0000">Email Address:</font></b>
-                            </td>
-                            <td>
-                                <input type="email" name="email" placeholder="Enter your email" required>
-                            </td>
-                        </tr>
+    <p><b>Name:</b> NISHANT KUMAR</p>
+    <p><b>Student ID:</b> 22515000091</p>
 
-                        <tr>
-                            <td align="right">
-                                <b><font color="#8B0000">Password:</font></b>
-                            </td>
-                            <td>
-                                <input type="password" name="password" placeholder="Enter password" required>
-                            </td>
-                        </tr>
+    <form>
 
-                        <tr>
-                            <td align="right" valign="top">
-                                <b><font color="#8B0000">Gender:</font></b>
-                            </td>
-                            <td>
-                                <input type="radio" id="male" name="gender" value="male">
-                                <label for="male">Male</label>&nbsp;&nbsp;
-                                
-                                <input type="radio" id="female" name="gender" value="female">
-                                <label for="female">Female</label>&nbsp;&nbsp;
-                                
-                                <input type="radio" id="other" name="gender" value="other">
-                                <label for="other">Other</label>
-                            </td>
-                        </tr>
+        <label>Full Name</label>
+        <input type="text" class="text" placeholder="Enter your name" required>
 
-                        <tr>
-                            <td align="right">
-                                <b><font color="#8B0000">Course / Branch:</font></b>
-                            </td>
-                            <td>
-                                <select name="course">
-                                    <option value="">-- Select Course --</option>
-                                    <option value="btech_cse">B.Tech Computer Science</option>
-                                    <option value="btech_it">B.Tech Information Technology</option>
-                                    <option value="bca">BCA</option>
-                                    <option value="mca">MCA</option>
-                                </select>
-                            </td>
-                        </tr>
+        <label>Email</label>
+        <input type="email" class="text" placeholder="Enter your email" required>
 
-                        <tr>
-                            <td align="right" valign="top">
-                                <b><font color="#8B0000">Interests:</font></b>
-                            </td>
-                            <td>
-                                <input type="checkbox" id="coding" name="interests" value="coding">
-                                <label for="coding">Coding</label><br>
+        <label>Password</label>
+        <input type="password" class="text" placeholder="Enter password" required>
 
-                                <input type="checkbox" id="gaming" name="interests" value="gaming">
-                                <label for="gaming">Gaming</label><br>
+        <label>Gender</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
 
-                                <input type="checkbox" id="music" name="interests" value="music">
-                                <label for="music">Music</label>
-                            </td>
-                        </tr>
+        <br><br>
 
-                        <tr>
-                            <td colspan="2" align="center">
-                                <br>
-                                <input type="submit" value="Submit Registration">
-                                <input type="reset" value="Reset Form">
-                            </td>
-                        </tr>
+        <label>Hobbies</label><br>
+        <input type="checkbox"> Reading
+        <input type="checkbox"> Sports
+        <input type="checkbox"> Music
 
-                    </table>
-                </form>
+        <br><br>
 
-                <table border="0" cellpadding="10" cellspacing="0" width="100%" bgcolor="#8B0440">
-                    <tr>
-                        <td align="center">
-                            <font color="#FFFFFF" size="1">&copy; 2026 Student Portal. </font>
-                        </td>
-                    </tr>
-                </table>
+        <label>Choose Course</label>
 
-            </td>
-        </tr>
-    </table>
+        <select class="text" required>
+            <option value="">Select Course</option>
+            <option>B.Tech</option>
+            <option>BCA</option>
+            <option>MCA</option>
+            <option>BBA</option>
+        </select>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</div>
 
 </body>
 </html>
