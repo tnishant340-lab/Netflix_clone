@@ -1,85 +1,104 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Marksheet</title>
+    <title>Student Marksheet</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f3eaff;
+            text-align: center;
+        }
+
+        .container {
+            width: 650px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #563477;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #8c70a8;
+            padding: 12px;
+        }
+
+        th {
+            background: #563477;
+            color: white;
+        }
+    </style>
 </head>
 
-<body bgcolor="#F4F6F9">
+<body>
 
-    <table border="1" cellpadding="10" cellspacing="0" bgcolor="#FFFF888FF" bordercolor="#CCC89CCC" align="center" width="500">
-        
-        
-        <tr bgcolor="#1A365D">
-            <th colspan="3">
-                <font color="#FFFFFF" size="5">Student Marksheet</font>
-            </th>
-        </tr>
+<div class="container">
 
+    <h2>ABC Public School</h2>
+    <h3>Student Marksheet</h3>
+
+    <p><b>Name:</b> NISHANT KUMAR</p>
+    <p><b>Student ID:</b> 22515000091</p>
+    <p><b>Class:</b> 12th</p>
+
+    <table>
         <tr>
-            <td colspan="3">
-                <b>Name:</b> NISHANT KUMAR<br>
-                <b>Roll No:</b> 69<br>
-                <b>Class:</b> B.Tech 2st Year
-            </td>
-        </tr>
-
-
-        <tr bgcolor="#2B6CB0">
-            <th><font color="#FFFFFF">Subject</font></th>
-            <th><font color="#FFFFFF">Maximum Marks</font></th>
-            <th><font color="#FFFFFF">Obtained Marks</font></th>
-        </tr>
-
-
-        <tr>
-            <td>Java</td>
-            <td align="center">100</td>
-            <td align="center">85</td>
-        </tr>
-
-        <tr bgcolor="#F8FAFC">
-            <td>Mathematics</td>
-            <td align="center">100</td>
-            <td align="center">78</td>
-        </tr>
-
-        <tr>
-            <td>Computer Science</td>
-            <td align="center">100</td>
-            <td align="center">88</td>
-        </tr>
-
-        <tr bgcolor="#F8FAFC">
-            <td>Web Development</td>
-            <td align="center">100</td>
-            <td align="center">90</td>
+            <th>Subject</th>
+            <th>Maximum Marks</th>
+            <th>Obtained Marks</th>
         </tr>
 
         <tr>
             <td>English</td>
-            <td align="center">100</td>
-            <td align="center">82</td>
-        </tr>
-
-
-        <tr bgcolor="#EDF2F7">
-            <td><b>Total</b></td>
-            <td align="center"><b>500</b></td>
-            <td align="center"><b>423</b></td>
-        </tr>
-
-  
-        <tr>
-            <td colspan="2"><b>Percentage:</b></td>
-            <td align="center"><b>84.6%</b></td>
+            <td>100</td>
+            <td>85</td>
         </tr>
 
         <tr>
-            <td colspan="2"><b>Result:</b></td>
-            <td align="center"><font color="green"><b>Pass</b></font></td>
+            <td>Physics</td>
+            <td>100</td>
+            <td>80</td>
         </tr>
 
+        <tr>
+            <td>Chemistry</td>
+            <td>100</td>
+            <td>78</td>
+        </tr>
+
+        <tr>
+            <td>Mathematics</td>
+            <td>100</td>
+            <td>90</td>
+        </tr>
+
+        <tr>
+            <td>Computer Science</td>
+            <td>100</td>
+            <td>95</td>
+        </tr>
+
+        <tr>
+            <th>Total</th>
+            <th>500</th>
+            <th>428</th>
+        </tr>
     </table>
+
+    <h3>Percentage: 85.6%</h3>
+    <h3>Result: PASS</h3>
+
+</div>
 
 </body>
 </html>
