@@ -1,16 +1,114 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Todo List</title>
-  <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f3eaff;
+            text-align: center;
+        }
+
+        .box {
+            width: 400px;
+            margin: 60px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #563477;
+        }
+
+        input {
+            padding: 10px;
+            width: 65%;
+        }
+
+        button {
+            padding: 10px;
+            background: #563477;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        li {
+            text-align: left;
+            padding: 10px;
+            margin-top: 10px;
+            background: #eee;
+        }
+
+        .done {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .delete {
+            background: red;
+            float: right;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="box">
-    <h2>Todo List</h2>
-    <input type="text" id="taskInput" placeholder="Enter a task">
+
+<div class="box">
+
+    <h2>My To-Do List</h2>
+
+    <h3>NISHANT KUMAR</h3>
+    <p>Student ID: 22515000091</p>
+
+    <input type="text" id="task" placeholder="Enter a task">
+
     <button onclick="addTask()">Add</button>
-    <ul id="taskList"></ul>
-  </div>
-  <script src="script.js"></script>
+
+    <ul id="list"></ul>
+
+</div>
+
+<script>
+
+    function addTask() {
+
+        let task = document.getElementById("task").value;
+
+        if (task == "") {
+            alert("Please enter a task");
+            return;
+        }
+
+        let li = document.createElement("li");
+
+        li.innerHTML = task;
+
+        li.onclick = function() {
+            li.classList.toggle("done");
+        };
+
+        let btn = document.createElement("button");
+
+        btn.innerHTML = "Delete";
+        btn.className = "delete";
+
+        btn.onclick = function(event) {
+            event.stopPropagation();
+            li.remove();
+        };
+
+        li.appendChild(btn);
+
+        document.getElementById("list").appendChild(li);
+
+        document.getElementById("task").value = "";
+    }
+
+</script>
+
 </body>
 </html>
