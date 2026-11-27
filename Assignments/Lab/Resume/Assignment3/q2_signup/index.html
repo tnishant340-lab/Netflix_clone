@@ -1,28 +1,101 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Signup Page</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Signup Page</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f3eaff;
+        }
+
+        .box {
+            width: 350px;
+            margin: 50px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #563477;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #563477;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="box">
-    <h2>Sign Up</h2>
+
+<div class="box">
+
+    <h2>Signup Form</h2>
+
+    <p><b>NISHANT KUMAR</b></p>
+    <p>Student ID: 22515000091</p>
+
     <form onsubmit="return validateForm()">
-      <input type="text" id="username" placeholder="Username">
-      <p class="error" id="usernameError"></p>
 
-      <input type="text" id="email" placeholder="Email">
-      <p class="error" id="emailError"></p>
+        <input type="text" id="name" placeholder="Enter Name">
 
-      <input type="password" id="password" placeholder="Password">
-      <p class="error" id="passwordError"></p>
+        <input type="email" id="email" placeholder="Enter Email">
 
-      <input type="password" id="confirm" placeholder="Confirm Password">
-      <p class="error" id="confirmError"></p>
+        <input type="password" id="password" placeholder="Enter Password">
 
-      <button type="submit">Sign Up</button>
+        <input type="password" id="confirm" placeholder="Confirm Password">
+
+        <button type="submit">Sign Up</button>
+
     </form>
-  </div>
-  <script src="script.js"></script>
+
+    <p id="message"></p>
+
+</div>
+
+<script>
+    function validateForm() {
+
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        let confirm = document.getElementById("confirm").value;
+
+        if (name == "" || email == "" || password == "" || confirm == "") {
+            alert("All fields are required");
+            return false;
+        }
+
+        if (password.length < 6) {
+            alert("Password must contain at least 6 characters");
+            return false;
+        }
+
+        if (password != confirm) {
+            alert("Passwords do not match");
+            return false;
+        }
+
+        document.getElementById("message").innerHTML = "Signup Successful!";
+
+        return false;
+    }
+</script>
+
 </body>
 </html>
